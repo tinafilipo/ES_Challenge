@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+
+}
+
+.container{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:10px;
+    align-items:center;
+    margin: 30px;
+    
+}
+
+.container{
+    padding:10px;
+}
+
+.container .post-picture{
+    width:300px;
+    height: 300px;
+    margin:auto;
+    display:block;
+}
+
+.profile-picture{
+    width:50px;
+    height:50px;
+    border-radius: 25px;
+    float:left;
+    margin: 10px;
+}
+
+.caption{
+    padding: 0 20px 20px 20px;
+    line-height:20px;
+    margin-top:10px;
+
+}
+
+.posts{
+    border: black solid 1px;
+    width:350px;
+}
+
+.name-date{
+    width:250px;
+    margin-top:10px;
+}
+
+hr{
+    width:90%;
+    margin:auto;
+    color: rgb(151, 145, 145);
+}
+.likes{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom:10px;
+
+}
+
+.ig-logo{
+    float:right;
+    margin-top:-20px;
+    margin-right:10px;
+}
+
+.fb-logo{
+    float:right;
+    margin-top:-20px;
+    margin-right:10px;
+}
+
+.heart-img{
+    float:left;
+    margin-left:20px;
+    margin-top:10px;
+    margin-right: 5px;
+}
+
+
+
+@media screen and (max-width: 992px){
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
